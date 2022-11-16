@@ -52,6 +52,11 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  background: var(--body_dark);
+  color: var(--white);
+}
+
 .common_btn_one {
   color: #ffffff !important;
   font-family: var(--Jost);
@@ -78,6 +83,23 @@ body {
 }
 .common_btn_one:hover::after {
   height: 0;
+}
+.section_heading {
+}
+.section_heading h3 {
+  color: var(--themecolor);
+  font-size: 22px;
+  padding-bottom: 6px;
+  font-weight: 400;
+  font-family: var(--Jost);
+}
+.section_heading h2 {
+  color: var(--white);
+  font-size: 48px;
+  line-height: 1.25;
+  padding-bottom: 16px;
+  font-weight: 500;
+  font-family: var(--Jost);
 }
 /* .common_btn_one:hover{
 
@@ -237,22 +259,191 @@ body {
   }
 }
 .mouse {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
-.mouse #wheel{
-    animation: wheel 1s linear infinite alternate;
+.mouse #wheel {
+  animation: wheel 1s linear infinite alternate;
 }
 
 @keyframes wheel {
-    0%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(40px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
 }
 
 /* ===================================
             Banner part End
+=================================== */
+
+/* ===================================
+            process part start
+=================================== */
+#process {
+  padding: 120px 0 90px 0;
+}
+.process_item {
+}
+.process_item .image {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.process_item .image svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+.process_item .text {
+  text-align: center;
+}
+.process_item .text h3 {
+}
+.process_item .text p {
+}
+
+/* ===================================
+            process part End
+=================================== */
+
+/* ===================================
+            About part End
+=================================== */
+#about {
+  padding: 90px 0;
+  position: relative;
+}
+.about_top_image{
+  position: absolute;
+  left: 50px;
+  top: 0;
+  z-index: 110;
+}
+.about_bottom_image{
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  z-index: 110;
+}
+#about .section_heading h2 {
+  padding-right: 100px;
+}
+.about_image {
+  position: relative;
+  margin-right: 50px;
+}
+.about_image .counter_item {
+  width: 230px;
+  border-radius: 10px;
+  background: var(--wrapper);
+  padding: 12px 25px;
+}
+.about_image .counter_item .count {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.about_image .counter_item .count .counter {
+  color: var(--green);
+  font-size: 60px;
+  font-family: var(--Jost);
+  font-weight: 400;
+}
+.about_image .counter_item .count .yellow {
+  color: var(--yellow);
+  font-size: 60px;
+  font-family: var(--Jost);
+  font-weight: 400;
+}
+.about_image .counter_item .count .yellow .counter {
+  color: var(--yellow);
+}
+.counter_item .text{
+  font-size: 17px;
+  font-weight: 500;
+  font-family: var(--Jost);
+  padding: 0 17px;
+}
+.counter_success{
+  position: absolute;
+  top: 120px;
+  left: -50px;
+  z-index: 100;
+}
+.counter_project{
+  position: absolute;
+  bottom: 70px;
+  right: -55px;
+  z-index: 100;
+}
+.about_text{
+  padding-left: 60px;
+}
+.about_text p {
+  padding-bottom: 20px;
+}
+/* ===================================
+            About part End
+=================================== */
+
+/* ===================================
+            portfolio part Start
+=================================== */
+#portfolio{
+  padding: 90px 0;
+}
+#portfolio .section_heading{
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+.portfolio_menu{
+  padding-top: 78px;
+  padding-bottom: 56px;
+}
+.portfolio_menu ul{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio_menu ul li{
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--Jost);
+  cursor: pointer;
+}
+.portfolio_menu ul li.active{
+  color: var(--themecolor);
+}
+.portfolio_item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.portfolio_item .image{
+  border-radius: 10px;
+  overflow: hidden;
+  background: red;
+  transition: all linear .3s;
+}
+.portfolio_item .image img{
+  transition: all linear .3s;
+}
+.portfolio_item .image:hover img{
+  transform: scale(1.2);
+}
+/* ===================================
+            portfolio part End
 =================================== */
