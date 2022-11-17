@@ -323,13 +323,13 @@ body {
   padding: 90px 0;
   position: relative;
 }
-.about_top_image{
+.about_top_image {
   position: absolute;
   left: 50px;
   top: 0;
   z-index: 110;
 }
-.about_bottom_image{
+.about_bottom_image {
   position: absolute;
   right: 50px;
   bottom: 0;
@@ -369,25 +369,25 @@ body {
 .about_image .counter_item .count .yellow .counter {
   color: var(--yellow);
 }
-.counter_item .text{
+.counter_item .text {
   font-size: 17px;
   font-weight: 500;
   font-family: var(--Jost);
   padding: 0 17px;
 }
-.counter_success{
+.counter_success {
   position: absolute;
   top: 120px;
   left: -50px;
   z-index: 100;
 }
-.counter_project{
+.counter_project {
   position: absolute;
   bottom: 70px;
   right: -55px;
   z-index: 100;
 }
-.about_text{
+.about_text {
   padding-left: 60px;
 }
 .about_text p {
@@ -400,31 +400,31 @@ body {
 /* ===================================
             portfolio part Start
 =================================== */
-#portfolio{
+#portfolio {
   padding: 90px 0;
 }
-#portfolio .section_heading{
+#portfolio .section_heading {
   text-align: center;
   width: 600px;
   margin: 0 auto;
 }
-.portfolio_menu{
+.portfolio_menu {
   padding-top: 78px;
   padding-bottom: 56px;
 }
-.portfolio_menu ul{
+.portfolio_menu ul {
   display: flex;
   gap: 50px;
   justify-content: center;
   align-items: center;
 }
-.portfolio_menu ul li{
+.portfolio_menu ul li {
   font-size: 16px;
   font-weight: 500;
   font-family: var(--Jost);
   cursor: pointer;
 }
-.portfolio_menu ul li.active{
+.portfolio_menu ul li.active {
   color: var(--themecolor);
 }
 .portfolio_item {
@@ -432,18 +432,89 @@ body {
   flex-direction: column;
   gap: 24px;
 }
-.portfolio_item .image{
+.portfolio_item .image {
   border-radius: 10px;
   overflow: hidden;
   background: red;
-  transition: all linear .3s;
+  transition: all linear 0.3s;
 }
-.portfolio_item .image img{
-  transition: all linear .3s;
+
+.portfolio_item .image a {
+  width: 100%;
+  height: 100%;
+  transition: all linear 0.3s;
 }
-.portfolio_item .image:hover img{
+.portfolio_item .image img {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover;
+  transition: all linear 0.3s;
+}
+.portfolio_item .image_big {
+  height: 453px;
+}
+.portfolio_item .image_small {
+  height: 240px;
+}
+
+.portfolio_item .image:hover img {
   transform: scale(1.2);
 }
+
+/* 
+.portfolio_filter{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.portfolio_filter .image{
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px !important;
+}
+
+.portfolio_filter .image:nth-child(1){
+
+  grid-row: span 2;
+  grid-column: span 1;
+  height: 150px;
+}
+.portfolio_filter .image:nth-child(2){
+  grid-row: span 1;
+  grid-column: span 1;
+  height: 100px;
+}
+.portfolio_filter .image:nth-child(3){
+  grid-row: span 2;
+  grid-column: span 1;
+  height: 150px;
+}
+.portfolio_filter .image:nth-child(4){
+  grid-row: span 1;
+  grid-column: span 1;
+  height: 100px;
+}
+.portfolio_filter .image:nth-child(5){
+  grid-row: span 2;
+  grid-column: span 1;
+  height: 150px;
+}
+.portfolio_filter .image:nth-child(6){
+  grid-row: 3 ;
+  grid-column: span 1;
+  height: 100px;
+}
+.portfolio_filter .image a img{
+  transition: all linear .3s;
+  height: 100%;
+}
+.portfolio_filter .image:hover a img{
+  transform: scale(1.1);
+} */
+
+
 /* ===================================
             portfolio part End
 =================================== */
+
